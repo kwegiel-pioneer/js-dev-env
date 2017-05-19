@@ -4,4 +4,5 @@
 //ES6 - use babel to transpile
 import chalk from 'chalk';
 
-console.log(chalk.green('Starting app in dev mode...'));
+//disable eslint no-console for just this line
+console.log(chalk.green('Starting app in dev mode...')); // eslint-disable-line no-console

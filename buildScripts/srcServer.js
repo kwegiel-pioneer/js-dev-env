@@ -12,6 +12,9 @@ import open from 'open';
 import webpack from 'webpack';
 import config from '../webpack.config.dev';
 
+//disable no-console lint for this file since this is a build script and we want to see console messages
+/* eslint-disable no-console */
+
 const port = 3000;
 const app = express();
 const compiler = webpack(config);
